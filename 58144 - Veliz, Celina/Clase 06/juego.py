@@ -1,6 +1,6 @@
 from generador import generador_mejor, generador
 adivinado=False
-aleatorio= generador(1,100000)
+aleatorio= generador(1,100)
 minimo=1
 maximo=100
 while adivinado == False:
@@ -16,7 +16,7 @@ while adivinado == False:
      if adivinado == False:
         print ("Ahora le toca a la computadora")
         computadora=generador(minimo,maximo)
-        print ("La computadora penso" + str(computadora))
+        print ("La computadora penso " + str(computadora))
         if computadora == aleatorio:
             print ("Gano la computadora")
             adivinado=True
@@ -24,7 +24,3 @@ while adivinado == False:
             minimo=computadora
         if computadora > aleatorio:
             maximo=computadora
-
-    
-    
-     
